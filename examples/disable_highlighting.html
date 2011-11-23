@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Prevent Text Highlighting</title>
+	</head>
+	
+	<body>
+		<p>Try Highliting me!</p>
+		<p>
+			<button class="disable_highlighting">Disable Highlighting</button>
+			<button class="enable_highlighting">Enable Highlighting</button>
+		</p>
+		
+		<script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../pepperspray-0.1.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(function(){
+				$('.disable_highlighting').click(function(){
+					$().pepperspray("disableHighlighting", true);
+				});
+				$('.enable_highlighting').click(function(){
+					$().pepperspray("disableHighlighting", false);
+				});
+			});
+		</script>
+	</body>
+		
+</html>

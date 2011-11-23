@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Prevent Right Click</title>
+	</head>
+	
+	<body>
+		<p>Try Right Clicking!</p>
+		<p>
+			<button class="disable_rightclick">Disable Right-Click</button>
+			<button class="enable_rightclick">Enable Right-Click</button>
+		</p>
+		
+		<script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../pepperspray-0.1.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(function(){
+				$('.disable_rightclick').click(function(){
+					$().pepperspray("disableRightClick", true);
+				});
+				$('.enable_rightclick').click(function(){
+					$().pepperspray("disableRightClick", false);
+				});
+			});
+		</script>
+	</body>
+		
+</html>
