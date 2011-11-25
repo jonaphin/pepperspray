@@ -2,13 +2,19 @@
 A jQuery plugin that will totally restrict your users' liberties on your site.
 
 ## Installation
-Coming soon...
+Include the jQuery and pepperspray libraries into your page.
 
 ## Usage
-Coming soon...
+##### Disabling/Enabling Highlighting
+$.pepperspray("disableHighlighting", true);
+$.pepperspray("disableHighlighting", false);
+
+#### Disabling/Enabling Right-Click
+$.pepperspray("disableRightClick", true);
+$.pepperspray("disableRightClick", false);
 
 
-#### CREDITS
+### CREDITS
 ................................................................................
 ................................................................................
 ......................................................=I+777+...................
