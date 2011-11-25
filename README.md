@@ -5,7 +5,7 @@ A jQuery plugin that will totally restrict your users' liberties on your site.
 Include the jQuery and pepperspray libraries into your page.
 
 ## Usage
-##### Disabling/Enabling Highlighting
+#### Disabling/Enabling Highlighting
 	$.pepperspray("disableHighlighting", true);
 	$.pepperspray("disableHighlighting", false);
 
