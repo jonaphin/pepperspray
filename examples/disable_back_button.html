@@ -6,11 +6,18 @@
 	<body>
 		<p>Press Back, Here I am again :)</p>
 		
+		<button class="disable_backbutton">Disable Back Button</button>
+		<button class="enable_backbutton">Enable Back Button</button>
 		<script type="text/javascript" charset="utf-8" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="../pepperspray-0.1.js"></script>
 		<script type="text/javascript" charset="utf-8">
 			$(function(){
-				$().pepperspray("disableBackButton");
+				$('.disable_backbutton').click(function(){
+					$.pepperspray("disableBackButton", true);
+				});
+				$('.enable_backbutton').click(function(){
+					$.pepperspray("disableBackButton", false);
+				});
 			});
 		</script>
 	</body>
