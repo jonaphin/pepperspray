@@ -13,6 +13,9 @@ Include the jQuery and pepperspray libraries into your page.
 	$.pepperspray("disableRightClick", true);
 	$.pepperspray("disableRightClick", false);
 
+#### Disabling/Enabling Back Button
+	$.pepperspray("disableBackButton", true);
+	$.pepperspray("disableBackButton", false);
 
 ### CREDITS
 	................................................................................
